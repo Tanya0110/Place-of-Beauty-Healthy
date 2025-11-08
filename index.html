@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — PLACE OF BEAUTY AND HEALTHY</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <button id="menu-toggle" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        <div class="container">
+            <div class="logo"><span class="site-name">Place of Beauty&Healthy</span></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="pricelist.html">Услуги и Цены</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div id="static-background" style="background-image: url('salon.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Place of Beauty&amp;Healthy</h2>
+            <p>Салон красоты в Большом Камне</p>
+            <a href="contacts.html#booking" class="btn primary">Записаться Онлайн</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2>Чем мы занимаемся</h2>
+                <div class="service-cards">
+                    <div class="card" onclick="openGallery('brows')"><h3>БРОВИ</h3><p>Коррекция, окрашивание и долговременная укладка. <span style="color: var(--neon-purple); font-weight: bold;">(Смотреть работы)</span></p></div>
+                    <div class="card" onclick="openGallery('lashes')"><h3>РЕСНИЦЫ</h3><p>Ламинирование верхних и нижних ресниц. <span style="color: var(--neon-purple); font-weight: bold;">(Смотреть работы)</span></p></div>
+                    <div class="card" onclick="openGallery('massage')"><h3>МАССАЖ</h3><p>Ручной (классический, лечебный) и аппаратный массаж. <span style="color: var(--neon-purple); font-weight: bold;">(Смотреть работы)</span></p></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="loyalty-marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="6">
+                <p>
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! 
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                    У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня!  
+                </p>
+            </marquee>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PLACE OF BEAUTY AND HEALTHY. Все права защищены.</p>
+            <p><a href="privacy.html">Политика конфиденциальности</a> | <a href="contacts.html">Связаться с нами</a></p>
+        </div>
+    </footer>
+
+    <div id="galleryModal" class="modal"><div class="modal-content"><div class="modal-header"><h3 id="galleryTitle"></h3><span class="close-button">&times;</span></div><div id="galleryContainer" class="gallery"></div></div></div>
+    <div id="lightbox" class="lightbox"><span class="lightbox-close">&times;</span><a class="lightbox-prev">&#10094;</a><a class="lightbox-next">&#10095;</a><img class="lightbox-content" id="lightbox-img"></div>
+
+    <script>
+        // --- Элементы DOM ---
+        const menuToggle = document.getElementById('menu-toggle');
+        const galleryModal = document.getElementById('galleryModal');
+        const galleryTitle = document.getElementById('galleryTitle');
+        const galleryContainer = document.getElementById('galleryContainer');
+        const galleryCloseButton = galleryModal.querySelector('.close-button');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        const lightboxNext = document.querySelector('.lightbox-next');
+
+        // --- Данные для галереи ---
+        const galleries = {
+            brows: { title: "Наши работы: Брови", images: ['images/4.jpg', 'images/5.jpg', 'images/15.jpg'] },
+            lashes: { title: "Наши работы: Ресницы", images: ['images/2.jpg', 'images/3.jpg', 'images/14.jpg'] },
+            massage: { title: "Наши работы: Массаж", images: ['images/1.jpg', 'images/6.jpg', 'images/7.jpg', 'images/8.jpg', 'images/9.jpg', 'images/10.jpg', 'images/11.jpg', 'images/12.jpg', 'images/13.jpg'] }
+        };
+
+        // --- Переменные для отслеживания состояния ---
+        let currentGalleryImages = [];
+        let currentImageIndex = 0;
+
+        // --- Функции ---
+        function openGallery(category) {
+            const data = galleries[category];
+            if (!data) return;
+            galleryTitle.textContent = data.title;
+            galleryContainer.innerHTML = '';
+            data.images.forEach((src, index) => {
+                const galleryItem = document.createElement('div');
+                galleryItem.classList.add('gallery-item');
+                galleryItem.innerHTML = `<img src="${src}" alt="${data.title}">`;
+                galleryItem.addEventListener('click', () => openLightbox(data.images, index));
+                galleryContainer.appendChild(galleryItem);
+            });
+            galleryModal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGallery() {
+            galleryModal.classList.remove('is-open');
+            if (!lightbox.classList.contains('is-open')) { document.body.style.overflow = ''; }
+        }
+
+        function openLightbox(imagesArray, index) {
+            currentGalleryImages = imagesArray;
+            currentImageIndex = index;
+            updateLightboxImage();
+            lightbox.classList.add('is-open');
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('is-open');
+            lightboxImg.classList.remove('is-zoomed');
+            if (!galleryModal.classList.contains('is-open')) { document.body.style.overflow = ''; }
+        }
+
+        function updateLightboxImage() {
+            lightboxImg.src = currentGalleryImages[currentImageIndex];
+            lightboxImg.classList.remove('is-zoomed');
+        }
+
+        function showNextImage() {
+            currentImageIndex++;
+            if (currentImageIndex >= currentGalleryImages.length) { currentImageIndex = 0; }
+            updateLightboxImage();
+        }
+
+        function showPrevImage() {
+            currentImageIndex--;
+            if (currentImageIndex < 0) { currentImageIndex = currentGalleryImages.length - 1; }
+            updateLightboxImage();
+        }
+
+        function toggleZoom() {
+            lightboxImg.classList.toggle('is-zoomed');
+        }
+
+        // --- Обработчики событий ---
+        menuToggle.addEventListener('click', () => document.body.classList.toggle('nav-open'));
+        galleryCloseButton.addEventListener('click', closeGallery);
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxNext.addEventListener('click', showNextImage);
+        lightboxPrev.addEventListener('click', showPrevImage);
+        lightboxImg.addEventListener('click', toggleZoom);
+
+        window.addEventListener('click', (event) => {
+            if (event.target == galleryModal) closeGallery();
+            if (event.target == lightbox && !event.target.classList.contains('lightbox-content')) { closeLightbox(); }
+        });
+        
+        document.addEventListener('keydown', (event) => {
+            if (lightbox.classList.contains('is-open')) {
+                if (event.key === 'ArrowRight') showNextImage();
+                if (event.key === 'ArrowLeft') showPrevImage();
+            }
+            if (event.key === 'Escape') {
+                if (lightbox.classList.contains('is-open')) closeLightbox();
+                else if (galleryModal.classList.contains('is-open')) closeGallery();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACE OF BEAUTY AND HEALTHY — Салон красоты в Большом Камне</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type=">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="PLACE OF BEAUTY AND HEALTHY Logo">
+                <h1>PLACE OF BEAUTY AND HEALTHY</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="pricelist.html">Услуги и Цены</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div id="video-background">
+            <video preload="auto" autoplay muted loop poster="hero-bg.jpg">
+                <source src="salon_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает HTML5 видео.
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Place of Beauty&amp;Healthy</h2>
+            <p>Салон красоты в Большом Камне</p>
+            <a href="contacts.html#booking" class="btn primary">
+                Записаться Онлайн
+            </a>
+        </div>
+    </main>
+
+    <section id="services">
+        <div class="container">
+            <h2>Чем мы занимаемся</h2>
+            <p style="text-align: center; margin-bottom: 30px;">БРОВИ, ЛАМИНИРОВАНИЕ РЕСНИЦ, АППАРАТНЫЙ МАССАЖ, РУЧНОЙ МАССАЖ</p>
+            
+            <div class="service-cards">
+                <div class="card">
+                    <h3>БРОВИ</h3>
+                    <p>Коррекция, окрашивание и долговременная укладка. Идеальный взгляд на каждый день.</p>
+                </div>
+                <div class="card">
+                    <h3>РЕСНИЦЫ</h3>
+                    <p>Ламинирование верхних и нижних ресниц — естественный объем и выразительность.</p>
+                </div>
+                <div class="card">
+                    <h3>МАССАЖ</h3>
+                    <p>Ручной (классический, лечебный) и аппаратный массаж для тела и здоровья.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="loyalty-marquee">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <p>
+                ⭐️ У нас действует СИСТЕМА ЛОЯЛЬНОСТИ! Получайте скидки до -30% с "Картой любимого клиента". Запишитесь сегодня! ⭐️
+            </p>
+        </marquee>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PLACE OF BEAUTY AND HEALTHY. Все права защищены.</p>
+            <p>
+                <a href="privacy.html">Политика конфиденциальности</a> | 
+                <a href="contacts.html">Связаться с нами</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

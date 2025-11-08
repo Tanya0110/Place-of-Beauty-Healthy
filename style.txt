@@ -1,0 +1,331 @@
+/* Переменные для цветов */
+:root {
+    --dark-bg: #8b00ff; /* Основной фон: Индиго/Темный фиолетовый */
+    --accent-color: #a033ff; /* Акцент: Яркий фиолетовый */
+    --neon-glow: #c380ff; /* Неоновое свечение */
+    --main-text: #fffff0; /* Слоновая кость для текста */
+    --card-bg: #ffffff; /* Белый фон для карточек и шапки */
+    --dark-footer: #000000; /* Черный фон для подвала */
+    --dark-header: var(--accent-color); /* Фон шапки */
+}
+
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--main-text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--neon-glow);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--card-bg);
+}
+
+/* Заголовок (Header) и Навигация (Nav) */
+header {
+    background-color: var(--dark-header); /* Яркий фиолетовый фон шапки */
+    padding: 15px 0;
+    box-shadow: 0 0 15px var(--neon-glow); /* Неоновое свечение шапки */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--card-bg); /* Белый текст логотипа */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--main-text);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: var(--card-bg); /* Белый при наведении */
+    border-bottom: 2px solid var(--neon-glow);
+}
+
+/* Кнопки (Buttons) */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--neon-glow); /* Неоновая рамка */
+}
+
+.btn.primary {
+    background-color: var(--accent-color); /* Яркий фиолетовый */
+    color: var(--card-bg);
+    box-shadow: 0 0 10px var(--neon-glow);
+}
+
+.btn.primary:hover {
+    background-color: var(--neon-glow);
+    color: var(--dark-bg); /* Темный текст при наведении */
+    box-shadow: 0 0 20px var(--card-bg);
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: var(--neon-glow);
+}
+
+.btn.secondary:hover {
+    background-color: var(--neon-glow);
+    color: var(--dark-bg);
+    box-shadow: 0 0 10px var(--neon-glow);
+}
+
+.btn.small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+/* Основной контент */
+main {
+    padding: 0; 
+}
+
+h2 {
+    color: var(--main-text);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    text-shadow: 0 0 5px var(--neon-glow); /* Свечение заголовков */
+}
+
+h3 {
+    color: var(--neon-glow);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--neon-glow);
+    padding-left: 10px;
+}
+
+/* Секция Hero (Видео-фон) */
+.hero {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-bg); /* Заглушка, если видео не грузится */
+}
+
+/* Видео и оверлей остаются прежними */
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--card-bg); 
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: var(--card-bg);
+    text-shadow: 0 0 20px var(--neon-glow); /* Сильное неоновое свечение */
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: var(--main-text);
+}
+
+/* Секция Услуг и Карточки */
+#services {
+    padding: 50px 0;
+    background-color: var(--dark-bg);
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: var(--card-bg); /* Белые карточки */
+    color: var(--dark-footer); /* Черный текст на белом фоне */
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px var(--neon-glow);
+    flex: 1;
+    min-width: 30%;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-glow);
+    box-shadow: 0 0 25px var(--neon-glow);
+}
+
+.card h3 {
+    color: var(--dark-bg); /* Темно-фиолетовые заголовки карточек */
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Секция Бегущей строки */
+.loyalty-marquee {
+    background-color: #a033ff; /* Яркий фиолетовый */
+    padding: 10px 0;
+    margin: 40px 0; 
+    box-shadow: 0 0 15px var(--card-bg); /* Белое свечение */
+}
+
+.loyalty-marquee p {
+    font-size: 1.2em;
+    color: #000000; /* Черный текст */
+    font-weight: bold; 
+    text-transform: uppercase;
+    white-space: nowrap; 
+}
+
+/* Секция Контакты (на contacts.html) */
+.contact-form-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--dark-bg); /* Темный фон секции */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid var(--neon-glow);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон для контраста */
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--card-bg); /* Белые поля ввода */
+    color: var(--dark-footer); 
+    border: 1px solid var(--accent-color);
+}
+
+/* Подвал (Footer) */
+footer {
+    background-color: var(--dark-footer);
+    color: var(--main-text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0; 
+    border-top: 2px solid var(--accent-color);
+}
+
+footer a {
+    color: var(--neon-glow);
+}
+
+/* Стили для прайс-листа (на pricelist.html) */
+.price-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0;
+}
+.price-category {
+    background-color: var(--card-bg); /* Белый фон */
+    color: var(--dark-footer); /* Черный текст */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--neon-glow);
+    width: 100%;
+    max-width: 550px;
+    min-width: 300px;
+}
+.price-category h3 {
+    color: var(--dark-bg); /* Темно-фиолетовый заголовок */
+    text-align: center;
+    margin-bottom: 25px;
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.8em;
+}
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--accent-color); /* Фиолетовая пунктирная линия */
+    padding: 10px 0;
+}
+.item-name {
+    font-weight: bold;
+    color: var(--dark-footer);
+}
+.item-price {
+    color: var(--accent-color); /* Яркий фиолетовый для цены */
+    font-weight: bold;
+}
+.note {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Медиа-запросы (адаптивность) */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+    }
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+}
